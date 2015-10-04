@@ -58,7 +58,7 @@ if (isset($accessToken)) {
 	var_dump($oAuth2Client);
 	echo "<br><br><br>";
 	// Exchanges a short-lived access token for a long-lived one
-	$longLivedAccessToken = $oAuth2Client->getLongLivedAccessToken('{access-token}');
+	$longLivedAccessToken = $oAuth2Client->getLongLivedAccessToken($accessToken);
 	echo ">>>>>longLivedAccessToken";
 	var_dump($longLivedAccessToken);
 	echo "<br><br><br>";
