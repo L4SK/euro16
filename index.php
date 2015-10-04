@@ -63,7 +63,7 @@ if (isset($accessToken)) {
 	var_dump($longLivedAccessToken);
 	echo "<br><br><br>";
 	// Sets the default fallback access token so we don't have to pass it to each request
-	$fb->setDefaultAccessToken('{access-token}');
+	$fb->setDefaultAccessToken($accessToken);
 	echo ">>>>>fb";
 	var_dump($fb);
 	echo "<br><br><br>";
