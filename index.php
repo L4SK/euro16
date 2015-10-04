@@ -37,14 +37,8 @@ $fb = new Facebook\Facebook([
 
 
 $helper = $fb->getJavaScriptHelper();
-echo "HELPER = ";
-var_dump($helper);
-echo "<br><br><br>";
 try {
   $accessToken = $helper->getAccessToken();
-  echo "accessToken = ";
-	var_dump($accessToken);
-	echo "<br><br><br>";
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
   // When Graph returns an error
   echo 'Graph returned an error: ' . $e->getMessage();
@@ -60,16 +54,29 @@ if (isset($accessToken)) {
 	echo "IN ISSET ACCESSTOKEN";
 	// OAuth 2.0 client handler
 	$oAuth2Client = $fb->getOAuth2Client();
-
+	echo ">>>>>oAuth2Client";
+	var_dump($oAuth2Client);
+	echo "<br><br><br>";
 	// Exchanges a short-lived access token for a long-lived one
 	$longLivedAccessToken = $oAuth2Client->getLongLivedAccessToken('{access-token}');
-
+	echo ">>>>>longLivedAccessToken";
+	var_dump($longLivedAccessToken);
+	echo "<br><br><br>";
 	// Sets the default fallback access token so we don't have to pass it to each request
 	$fb->setDefaultAccessToken('{access-token}');
-
+	echo ">>>>>fb";
+	var_dump($fb);
+	echo "<br><br><br>";
 	try {
+		echo "IN TRY";
 		$response = $fb->get('/me');
+		echo ">>>>>response";
+		var_dump($response);
+		echo "<br><br><br>";
 		$userNode = $response->getGraphUser();
+		echo ">>>>>userNode";
+		var_dump($userNode);
+		echo "<br><br><br>";
 	} catch(Facebook\Exceptions\FacebookResponseException $e) {
 		// When Graph returns an error
 		echo 'Graph returned an error: ' . $e->getMessage();
