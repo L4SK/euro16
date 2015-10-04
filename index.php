@@ -4,6 +4,7 @@
     FB.init({
       appId      : '882396735180931',
       xfbml      : true,
+      cookie	: true,
       version    : 'v2.4'
     });
     FB.getLoginStatus(function(response) {
