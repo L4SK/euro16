@@ -33,7 +33,8 @@
 
   window.fbAsyncInit = function() {
     FB.init({
-      appId		: $.getenv("FACEBOOK_APP_ID"),
+      //appId		: $.getenv("FACEBOOK_APP_ID"),
+      appId		: '882396735180931',
       xfbml		: true,
       cookie	: true,
       version	: 'v2.4'
