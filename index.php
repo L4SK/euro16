@@ -8,9 +8,14 @@ $fb = new Facebook\Facebook([
 	]);
 
 $helper = $fb->getCanvasHelper();
+echo "HELPER = ";
 var_dump($helper);
+echo "<br><br><br>";
 try {
 	$accessToken = $helper->getAccessToken();
+	echo "ACCESSTOKEN = ";
+	var_dump($accessToken);
+	echo "<br><br><br>";
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
 	// When Graph returns an error
 	echo 'Graph returned an error: ' . $e->getMessage();
@@ -22,6 +27,7 @@ try {
 }
 
 if (isset($accessToken)) {
+	echo "IN ISSET ACCESSTOKEN";
 	// OAuth 2.0 client handler
 	$oAuth2Client = $fb->getOAuth2Client();
 
