@@ -8,6 +8,7 @@ $fb = new Facebook\Facebook([
 	]);
 
 $helper = $fb->getCanvasHelper();
+var_dump($helper);
 try {
 	$accessToken = $helper->getAccessToken();
 } catch(Facebook\Exceptions\FacebookResponseException $e) {
