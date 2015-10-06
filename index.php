@@ -71,7 +71,7 @@ if (isset($accessToken)) {
 		exit;
 	}
 
-	echo 'Logged in as ' . $userNode->getName();
+	echo 'You are logged in as ' . $userNode->getName();
 
 	try {
 		$response = $fb->get('/me');
