@@ -34,10 +34,6 @@ $fb = new Facebook\Facebook([
 	'app_secret' => getenv('FACEBOOK_SECRET'),
 	'default_graph_version' => 'v2.4',
 	]);
-	
-echo getenv('FACEBOOK_APP_ID');
-echo getenv('FACEBOOK_SECRET');
-
 
 $helper = $fb->getJavaScriptHelper();
 try {
