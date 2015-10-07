@@ -30,8 +30,8 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 $fb = new Facebook\Facebook([
-	'app_id' => getenv(FACEBOOK_APP_ID),
-	'app_secret' => getenv(FACEBOOK_SECRET),
+	'app_id' => getenv('FACEBOOK_APP_ID'),
+	'app_secret' => getenv('FACEBOOK_SECRET'),
 	'default_graph_version' => 'v2.4',
 	]);
 
