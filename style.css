@@ -5,4 +5,82 @@ body {
 
 #logo {
 	width: 100px;
+	margin-left: 50px;
+	float: left;
+}
+
+.content_presentation {
+	width: 700px;
+	margin-top: 80px;
+	margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+}
+
+.content_presentation .header {
+    background-color: #3a5795;
+    color: white;
+    padding: 5px 0px 5px 15px;
+}
+
+.content_presentation .content {
+	padding: 0px 20px;
+    text-align: justify;
+}
+
+.content_presentation #checkbox_presentation {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.content_presentation a#commencer {
+	-moz-user-select: none;
+	background: #2A49A5; 
+	border: 1px solid #082783;
+	box-shadow: 0 1px #4C6BC7 inset;
+	color: white;
+	padding: 3px 5px;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 #082783;
+	font: 12px Verdana, sans-serif;
+}
+
+.content_presentation .footer {
+	background-color: #f6f7f8;
+    border-top: 1px solid #ccc;
+    padding: 20px 20px;
+    text-align: right;
+}
+
+#content_choix_jeu {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: white;
+}
+
+#content_choix_jeu #content_choix {
+	width: 250px;
+	background-color: #ffaaaa;
+	float: left;
+}
+
+#content_choix_jeu .choix {
+	width: 250px;
+	background-color: #ffaaaa;
+	float: left;
+	text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#content_choix_jeu .choix img {
+	width: 100px;
+    float: right;
+}
+
+#content_choix_jeu h1 {
+	text-align: center;
 }
